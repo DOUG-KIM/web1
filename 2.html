@@ -55,5 +55,40 @@ s0.parentNode.insertBefore(s1,s0);
 <!--End of Tawk.to Script-->
 
 
+
+
+
+<p>
+New version<br>
+[
+<span id="dd">
+</span>
+-
+<span id="mm">
+</span>
+-
+<span id="yy">
+</span>
+]
+<script>
+    var d = new Date();
+      var n = d.getDate();
+    document.getElementById("dd").innerHTML = n;
+</script>
+<script>
+    var d = new Date();
+      var n = d.getMonth() +1;
+    document.getElementById("mm").innerHTML = n;
+</script>
+<script>
+    var d = new Date();
+      var n = d.getFullYear();
+    document.getElementById("yy").innerHTML = n;
+</script>
+</p>
+
+
+
+
 </body>
 </html>
