@@ -6,7 +6,7 @@
 </head>
 
 <body>
-
+<p>
 <input type="button" value="night" onclick="
 document.querySelector('body').style.backgroundColor='black';
 document.querySelector('body').style.color='white';
@@ -16,13 +16,30 @@ document.querySelector('body').style.color='white';
 document.querySelector('body').style.backgroundColor='white';
 document.querySelector('body').style.color='black';
 ">
+</p>
 
+<p>
+  <span style = " font-size:1.5em;  color: powderblue;">
+New version
+  </span>
+  <br>
+[
+<script>
+  var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+  document.write(utc);
+</script>
+]
+</p>
+
+
+
+<p>
 <h1><a href="index_first.html" target="_blank">WEB</a></h1>
 <ol>
   <li><a href="1.html" target="_blank">HTML</a></li>
   <li><a href="2.html" target="_blank">CSS</a></li>
   <li><a href="3.html" target="_blank">Java script</a></li></ol>
-
+</p>
 
 <h2>CSS란?</h2>
 <p><a href="https://www.w3.org/TR/html51/" target="_blank">Hypertext Markup Language (HTML)</a>
@@ -53,39 +70,6 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
-
-
-
-
-
-<p>
-New version<br>
-[
-<span id="dd">
-</span>
--
-<span id="mm">
-</span>
--
-<span id="yy">
-</span>
-]
-<script>
-    var d = new Date();
-      var n = d.getDate();
-    document.getElementById("dd").innerHTML = n;
-</script>
-<script>
-    var d = new Date();
-      var n = d.getMonth() +1;
-    document.getElementById("mm").innerHTML = n;
-</script>
-<script>
-    var d = new Date();
-      var n = d.getFullYear();
-    document.getElementById("yy").innerHTML = n;
-</script>
-</p>
 
 
 
