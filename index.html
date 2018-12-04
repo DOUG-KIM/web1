@@ -42,21 +42,28 @@
   </script>
   ]
 
-  <input id="night_day"  type="button" value="night" onclick = "
-  if(document.querySelector('#night_day').value == 'night')
-  {document.querySelector('body').style.backgroundColor='black';
-  document.querySelector('body').style.color='white';
-  document.querySelector('#night_day').value='day';
-}
-  else
-  {document.querySelector('body').style.backgroundColor='white';
-  document.querySelector('body').style.color='black';
-  document.querySelector('#night_day').value='night';
-}">
-
-
+  <script>
+  var target = document.querySelector('body').style;
+  </script>
+      <input type="button" value="night" onclick = "
+      if(this.value == 'night')
+      {target.backgroundColor='black';
+      target.color='white';
+      this.value='day';
+    }
+      else
+      {target.backgroundColor='white';
+      target.color='black';
+      this.value='night';
+    }">
   </p>
 
+  <p>
+  <li><a href = "index.html" target = "_blank">index</a></li>
+  <li><a href = "1.html" target = "_blank">HTML</a></li>
+  <li><a href = "2.html" target = " _blank">CSS</a></li>
+  <li><a href = "3.html" target = " _blank">Java Script</a></li>
+  </p>
 
 
 <div id="container">
@@ -76,9 +83,9 @@
 
 <p>
 <iframe width="560" height="315"
-src="https://www.youtube.com/embed/OWKBgnntzmE" frameborder="0"
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen></iframe>
+ src="https://www.youtube.com/embed/_KItpOVLNfE"
+ frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+ allowfullscreen></iframe>
 </p>
 
   <div id="lowerContainer">

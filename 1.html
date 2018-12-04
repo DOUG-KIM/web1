@@ -6,21 +6,55 @@
 </head>
 
 <body>
+
   <p>
-  <input id="night_day"  type="button" value="night" onclick = "
-  if(document.querySelector('#night_day').value == 'night')
+<script>
+var target = document.querySelector('body').style;
+</script>
+    <input type="button" value="night" onclick = "
+    if(this.value == 'night')
+    {target.backgroundColor='black';
+    target.color='white';
+    this.value='day';
+  }
+    else
+    {target.backgroundColor='white';
+    target.color='black';
+    this.value='night';
+  }">
+
+
+
+
+
+  <input type="button" id="day_lights" value="night" onclick = "
+  if(document.getElementById('day_lights').value == 'night')
   {document.querySelector('body').style.backgroundColor='black';
   document.querySelector('body').style.color='white';
-  document.querySelector('#night_day').value='day';
-  }
+  document.getElementById('day_lights').value='day';
+}
   else
   {document.querySelector('body').style.backgroundColor='white';
   document.querySelector('body').style.color='black';
-  document.querySelector('#night_day').value='night';
-  }
-  "
-</p>
+  document.getElementById('day_lights').value='night';
+}">
 
+
+  <!-- <script> -->
+  <!-- var target = document.querySelector('body').style; -->
+  <!-- </script> -->
+      <!-- <input type="button" value="night" onclick = "
+      if(this.value == 'night')
+      {target.backgroundColor='black';
+      target.color='white';
+      this.value='day';
+    }
+      else
+      {target.backgroundColor='white';
+      target.color='black';
+      this.value='night';
+    }"> -->
+  </p>
 <p>
   <span style = " font-size:1.5em;  color: powderblue;">
 New version
@@ -47,10 +81,10 @@ New version
 
 
 <p>
-<iframe width="560" height="315"
-src="https://www.youtube.com/embed/OGFgdro160I" frameborder="0"
-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
- allowfullscreen></iframe>
+  <iframe width="560" height="315"
+  src="https://www.youtube.com/embed/kGA-bTRdYUs"
+  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen></iframe>
 </p>
 
 <h2><abbr title="World Wide Web Consortium">HTML</abbr> Reference</h2>
