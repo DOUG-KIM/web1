@@ -9,27 +9,52 @@
 <p>
   <script>
   var target = document.querySelector('body').style;
+
+  function nightDay_button(self){
+  if(self.value == 'night')
+  {target.backgroundColor='black';
+  target.color='white';
+  self.value='day';
+
+
+  var alias = document.querySelectorAll('a');
+  var a = 0;
+
+  while(a < alias.length){
+  console.log(alias[a]);
+  alias[a].style.color='powderblue';
+  a = a+1;
+  }
+
+}
+  else
+  {target.backgroundColor='white';
+  target.color='black';
+  self.value='night';
+
+
+  var alias = document.querySelectorAll('a');
+  var a = 0;
+  while(a < alias.length){
+  console.log(alias[a]);
+  alias[a].style.color='blue';
+  a = a+1;
+  }
+}
+}
   </script>
+
+
       <input type="button" value="night" onclick = "
-      if(this.value == 'night')
-      {target.backgroundColor='black';
-      target.color='white';
-      this.value='day';
-    }
-      else
-      {target.backgroundColor='white';
-      target.color='black';
-      this.value='night';
-    }">
+      nightDay_button(this)
+      ">
 
+      <input type="button" value="night" onclick = "
+      nightDay_button(this)
+      ">
 </p>
 
-<p>
-<li><a href = "index.html" target = "_blank">index</a></li>
-<li><a href = "1.html" target = "_blank">HTML</a></li>
-<li><a href = "2.html" target = " _blank">CSS</a></li>
-<li><a href = "3.html" target = " _blank">Java Script</a></li>
-</p>
+
 
 <p>
   <span style = " font-size:1.5em;  color: powderblue;">

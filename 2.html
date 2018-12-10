@@ -9,20 +9,50 @@
   <p>
     <script>
    var target = document.querySelector('body').style;
-    </script>
+
+function nightDay_button (self){
+  if(self.value == 'night')
+  {target.backgroundColor='black';
+  target.color='white';
+  self.value='day';
+
+
+  var atag = document.querySelectorAll('a');
+  var i = 0;
+  while(i < atag.length){
+
+  atag[i].style.color = 'blue';
+    i = i + 1;
+  }
+
+  }
+  else
+  {target.backgroundColor='white';
+  target.color='black';
+  self.value='night';
+
+
+  var atag = document.querySelectorAll('a');
+  var i = 0;
+  while(i < atag.length){
+
+    atag[i].style.color = 'powderblue';
+    i = i + 1;
+  }
+
+  }
+
+}
+
+</script>
+
          <input type="button" value="night" onclick = "
-         if(this.value == 'night')
-         {target.backgroundColor='black';
-         target.color='white';
-         this.value='day';
-       }
-         else
-         {target.backgroundColor='white';
-         target.color='black';
-         this.value='night';
-       }">
+         nightDay_button(this);
+         ">
 
+<script>
 
+</script>
 
   </p>
   <span style = " font-size:1.5em;  color: powderblue;">

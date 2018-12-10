@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+
+
+</head>
+<tatle>Test For Object</tatle>
+
+
+<body>
+
+
+
+
+
+<h1>객체 테스트</h1>
+<script>
+
+  var coworker = {
+
+  "programer" : "Doug",
+
+  "designer" : "sana",
+
+
+}
+
+  document.write("프로그래머: " + coworker.programer + "<br>");
+  document.write("디자이너: " + coworker.designer + "<br>" );
+  coworker.manager = "julia";
+  document.write("매너저 :" + coworker.manager + "<br>");
+
+coworker.showAll = function(){
+for(var key in coworker){
+if(key != "showAll"){
+document.write(key +" : "+ coworker[key]+ "<br>");
+}
+}
+}
+  coworker.showAll();
+</script>
+
+
+<h2>직원목록</h2>
+<p>
+<script>coworker.showAll();</script>
+</p>
+
+</body>
+</html>
