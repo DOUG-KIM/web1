@@ -3,52 +3,11 @@
 <head>
 <title>Web - index about web</title>
 <meta charset="utf-8">
+<script scr="colors.js"></script>
 </head>
 
 <body>
 <p>
-  <script>
-  var target = document.querySelector('body').style;
-
-  function nightDay_button(self){
-  if(self.value == 'night')
-  {target.backgroundColor='black';
-  target.color='white';
-  self.value='day';
-
-
-  var alias = document.querySelectorAll('a');
-  var a = 0;
-
-  while(a < alias.length){
-  console.log(alias[a]);
-  alias[a].style.color='powderblue';
-  a = a+1;
-  }
-
-}
-  else
-  {target.backgroundColor='white';
-  target.color='black';
-  self.value='night';
-
-
-  var alias = document.querySelectorAll('a');
-  var a = 0;
-  while(a < alias.length){
-  console.log(alias[a]);
-  alias[a].style.color='blue';
-  a = a+1;
-  }
-}
-}
-  </script>
-
-
-      <input type="button" value="night" onclick = "
-      nightDay_button(this)
-      ">
-
       <input type="button" value="night" onclick = "
       nightDay_button(this)
       ">
@@ -71,11 +30,11 @@ New version
 
 
 <p>
-<h1><a href="index_first.html" target="">WEB</a></h1>
+<h1><a href="index_first.html" target="_blank">WEB</a></h1>
 <ol>
-  <li><a href="1.html" target="">HTML</a></li>
-  <li><a href="2.html" target="">CSS</a></li>
-  <li><a href="3.html" target="">Java script</a></li></ol>
+  <li><a href="1.html" target="_blank">HTML</a></li>
+  <li><a href="2.html" target="_blank">CSS</a></li>
+  <li><a href="3.html" target="_blank">Java script</a></li></ol>
 </p>
 
 <p>

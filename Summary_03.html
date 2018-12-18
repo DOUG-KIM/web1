@@ -1,0 +1,57 @@
+<! doctype>
+
+<html>
+<head></head>
+<title>Test</title>
+<body>
+
+<h1>객체 연습</h1>
+<script>
+var workers = {
+
+"manager" : "Alerbert",
+"chashier" : "Ban",
+
+showAllSec : function () {
+for(var key in workers){
+  if(key != 'showAllSec'){
+document.write(key + " : "+ workers[key] + '<br>');
+}
+}
+}
+
+
+}
+
+
+document.write("매니저: "+ workers.manager+ '<br>');
+document.write("캐셔: "+ workers.chashier+ '<br>');
+workers.cfo = "Charie";
+document.write("cfo: "+ workers.cfo+ '<br>');
+
+workers.showWorkers = function (){
+ for(var key in workers){
+   if(key != 'showWorkers'){
+document.write(key+ ": "+ workers[key]+'<br>');
+}
+ }
+}
+
+</script>
+
+<h3>객체 호출</h3>
+<br>
+<p>
+<script>
+workers.showWorkers();
+</script>
+
+
+<h3>객체 호출 2</h3>
+<script>
+workers.showAllSec();
+</script>
+
+</p>
+</body>
+</html>

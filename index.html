@@ -4,6 +4,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Bitnami: Open Source. Simplified</title>
 <link href="bitnami.css" media="all" rel="Stylesheet" type="text/css" />
+
+<script scr = "colors.js"></script>
+
 </head>
 <body>
 
@@ -42,20 +45,9 @@
   </script>
   ]
 
-  <script>
-  var target = document.querySelector('body').style;
-  </script>
       <input type="button" value="night" onclick = "
-      if(this.value == 'night')
-      {target.backgroundColor='black';
-      target.color='white';
-      this.value='day';
-    }
-      else
-      {target.backgroundColor='white';
-      target.color='black';
-      this.value='night';
-    }">
+      nightDay_button(this);
+    ">
   </p>
 
   <p>
