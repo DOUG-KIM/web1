@@ -25,7 +25,7 @@ target.color='black';
 self.value='night';
 
 var alias = document.querySelectorAll('a');
-var a;
+var a = 0;
 
 while(a < alias.length){
   alias[a].style.color = 'blue';
