@@ -29,6 +29,7 @@ var a;
 
 while(a < alias.length){
   alias[a].style.color = 'blue';
+  alias[a].style.fontWeight = 900;
   a = a + 1;
 }
 }
